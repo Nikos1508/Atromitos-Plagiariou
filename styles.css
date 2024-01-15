@@ -42,3 +42,58 @@ td{
     align-items: center;
     align-content: center;
 }
+
+#broadcasts{
+    text-align: center; 
+    font-size: 23px; 
+    font-weight: 700; 
+    font-family: Arial; 
+    background-color: rgb(63, 166, 225);
+    border-top-right-radius: 25px; 
+    border-top-left-radius: 25px; 
+    border: 5px solid rgb(255, 255, 255);
+    
+}
+
+audio::-webkit-media-controls-panel,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-timeline-container,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button,
+audio::-webkit-media-controls-fullscreen-button,
+audio::-webkit-media-controls-rewind-button,
+audio::-webkit-media-controls-return-to-realtime-button,
+audio::-webkit-media-controls-toggle-closed-captions-button{
+    background-color: rgb(38, 152, 234);
+    color: rgb(38, 152, 234);
+    transition: background-color 350ms linear;
+    font-weight: 700;
+    color: rgb(40, 87, 159);
+}
+
+audio::-webkit-media-controls-mute-button:hover,
+audio::-webkit-media-controls-play-button:hover,
+audio::-webkit-media-controls-timeline:hover,
+audio::-webkit-media-controls-seek-back-button:hover,
+audio::-webkit-media-controls-seek-forward-button:hover,
+audio::-webkit-media-controls-fullscreen-button:hover,
+audio::-webkit-media-controls-rewind-button:hover,
+audio::-webkit-media-controls-return-to-realtime-button:hover,
+audio::-webkit-media-controls-toggle-closed-captions-button{
+    background-color: rgb(110, 180, 230);
+}
+
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-timeline{
+    border-start-end-radius: 50px;
+    border-start-start-radius: 50px;
+    border-end-start-radius: 50px;
+    border-end-end-radius: 50px;
+}
