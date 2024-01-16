@@ -1,5 +1,13 @@
+:root {
+    --light_blue: rgb(30, 144, 255);
+    --white: rgb(255, 255, 255);
+    --smoky_white:rgb(200, 200, 200);
+    --blue: rgb(40, 87, 159);
+    --dark_blue: rgb(0, 50, 130);
+  }
+
 body{
-    background-color: #28579F; 
+    background-color: var(--blue); 
     background-size: cover;
 }
 
@@ -10,49 +18,54 @@ body{
     padding-right: 0; 
     justify-content: flex-start; 
     align-items: center; 
-    gap: 0px; 
+    gap: 0px;
     display: inline-flex
-    
 }
 
 #nav-bar{
     width: 380px; 
     height: 40px; 
     text-align: center; 
-    color: white; 
+    color: var(--white); 
     font-size: 32px; 
     font-family: Arial; 
-    font-weight: 600; 
+    font-weight: 600;  
 }
+
+a{text-decoration: none;}
+a {color: var(--dark_blue)}
+a:visited {color: var(--dark_blue);}
+a:hover {color: var(--smoky_white);}
+a:active {color: var(--white);}
 
 #first-broadcast{
     width: 100%; 
     height: 100%; 
     text-align: center; 
-    color: white; 
+    color: var(--white);
     font-size: 36px; 
     font-family: Inter; 
     font-weight: 500; 
-    word-wrap: break-word"
 }
 
-td{
-    padding-right: 13vw;
-    padding-top: 12vh;
-    align-items: center;
-    align-content: center;
-}
-
-#broadcasts{
-    text-align: center; 
-    font-size: 23px; 
-    font-weight: 700; 
-    font-family: Arial; 
+#match{
+    font-size: 18px; 
+    font-weight: 600; 
+    font-family: Arial;
     background-color: rgb(63, 166, 225);
-    border-top-right-radius: 25px; 
-    border-top-left-radius: 25px; 
+    border-radius: 2vw;
     border: 5px solid rgb(255, 255, 255);
-    
+    line-height: 1.8
+}
+
+#matches {
+    border-spacing: 30px;
+}
+
+tbody{
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
 }
 
 audio::-webkit-media-controls-panel,
@@ -75,6 +88,10 @@ audio::-webkit-media-controls-toggle-closed-captions-button{
     transition: background-color 350ms linear;
     font-weight: 700;
     color: rgb(40, 87, 159);
+}
+
+audio::-webkit-media-controls-volume-slider{
+    background-color: var(--dark_blue);
 }
 
 audio::-webkit-media-controls-mute-button:hover,
