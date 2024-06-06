@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Page</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the query string from the URL
+            let params = new URLSearchParams(window.location.search);
+            
+            // Get the 'page' parameter
+            let page = params.get('page');
+
+            // Define the content for each page
+            const pages = {
+                '1': `
+                    <h1>Welcome to Page 1</h1>
+                    <p>This is the content for Page 1.</p>
+                    <p>Additional content for Page 1.</p>
+                    <ul>
+                        <li>Item 1 on Page 1</li>
+                        <li>Item 2 on Page 1</li>
+                    </ul>
+                `,
+                '2': `
+                    <h1>Welcome to Page 2</h1>
+                    <p>This is the content for Page 2.</p>
+                    <p>Additional content for Page 2.</p>
+                    <ul>
+                        <li>Item 1 on Page 2</li>
+                        <li>Item 2 on Page 2</li>
+                    </ul>
+                `,
+                '3': `
+                    <h1>Welcome to Page 3</h1>
+                    <p>This is the content for Page 3.</p>
+                    <p>Additional content for Page 3.</p>
+                    <ul>
+                        <li>Item 1 on Page 3</li>
+                        <li>Item 2 on Page 3</li>
+                    </ul>
+                `
+            };
+
+            // Default content if no 'page' parameter is found
+            const defaultContent = `
+                <h1>Welcome to the Default Page</h1>
+                <p>This is the default content.</p>
+                <p>Additional default content.</p>
+                <ul>
+                    <li>Default item 1</li>
+                    <li>Default item 2</li>
+                </ul>
+            `;
+
+            // Get the content based on the 'page' parameter
+            let content = pages[page] || defaultContent;
+
+            // Update the HTML content
+            document.getElementById('dynamic-content').innerHTML = content;
+        });
+    </script>
+</head>
+    <body>
+        <div id="dynamic-content"></div>
+    </body>
+</html>
