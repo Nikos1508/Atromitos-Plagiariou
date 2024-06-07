@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Content Page</title>
+    <title> Πληροφορίες αγώνα </title>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Get the query string from the URL
@@ -15,13 +15,643 @@
             // Define the content for each page
             const pages = {
                 '1': `
-                    <h1>Welcome to Page 1</h1>
-                    <p>This is the content for Page 1.</p>
-                    <p>Additional content for Page 1.</p>
-                    <ul>
-                        <li>Item 1 on Page 1</li>
-                        <li>Item 2 on Page 1</li>
-                    </ul>
+                    <body>
+                        <div id="banner">
+                        <img style="width: 180px; height: 180px;" src="/media/Banner.png" />  
+                        <div id="nav-bar"><a href="/index.html">Αρχική</a></div>
+                        <div id="nav-bar"><a href="/pages/championship.html">Πρωτάθλημα</a></div>
+                        <div id="nav-bar">
+                            <div id= "nav-bar" class= "dropdown">
+                            <button class="dropbtn"> Η ομάδα μας <i class="fa fa-caret-down"></i> </button>
+                                <div class="dropdown-content">
+                                <a href="#"> Η ιστορία μας </a>
+                                <a href="/pages/program.html"> Προγράμματα </a>
+                                <a href="/pages/our_team.html"> Ομάδα αγώνων </a>
+                                <a href="/pages/contact_us.html"> Επικοινωνία </a>
+                                </div>
+                            </div>
+                            </div>
+                        <div id="nav-bar"><a href="/pages/matches.html">Αγώνες</a></div>
+                        </div>
+                    </div>
+                    <table id= "matches_info_table">
+                            <tr>
+                                <td rowspan="2" style="width:700px;"> 
+                                    <div class="slideshow-container">
+
+                                        <!-- Full-width images with number and caption text -->
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">1 / 3</div>
+                                        <section class="pitch">
+                                            <div class="field left">
+                                                <div class="penalty-area">
+                                                </div>
+                                            </div>
+                                            <div class="center-circle"></div>
+                                            <div class="home-team">
+                                                <div class="player one"></div>
+                                                <div class="player two"></div>
+                                                <div class="player three"></div>
+                                                <div class="player four"></div>
+                                                <div class="player five"></div>
+                                                <div class="player six"></div>
+                                                <div class="player seven"></div>
+                                                <div class="player eight"></div>
+                                                <div class="player nine"></div>
+                                                <div class="player ten"></div>
+                                                <div class="player eleven"></div>
+                                            </div>
+                                            <div class="visitor-team">
+                                                <div class="player one"></div>
+                                                <div class="player two"></div>
+                                                <div class="player three"></div>
+                                                <div class="player four"></div>
+                                                <div class="player five"></div>
+                                                <div class="player six"></div>
+                                                <div class="player seven"></div>
+                                                <div class="player eight"></div>
+                                                <div class="player nine"></div>
+                                                <div class="player ten"></div>
+                                                <div class="player eleven"></div>
+                                            </div>
+                                            <div class="field right">
+                                                <div class="penalty-area">
+                                                </div>
+                                            </div>
+                                        </section> 
+                                        <div class="text">Caption Text</div>
+                                        </div>
+                                    
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">2 / 3</div>
+                                        <section class="pitch">
+                                            <div class="field left">
+                                                <div class="penalty-area">
+                                                </div>
+                                            </div>
+                                            <div class="center-circle"></div>
+                                            <div class="home-team">
+                                                <div class="player one"></div>
+                                                <div class="player two"></div>
+                                                <div class="player three"></div>
+                                                <div class="player four"></div>
+                                                <div class="player five"></div>
+                                                <div class="player six"></div>
+                                                <div class="player seven"></div>
+                                                <div class="player eight"></div>
+                                                <div class="player nine"></div>
+                                                <div class="player ten"></div>
+                                                <div class="player eleven"></div>
+                                            </div>
+                                            <div class="visitor-team">
+                                                <div class="player one"></div>
+                                                <div class="player two"></div>
+                                                <div class="player three"></div>
+                                                <div class="player four"></div>
+                                                <div class="player five"></div>
+                                                <div class="player six"></div>
+                                                <div class="player seven"></div>
+                                                <div class="player eight"></div>
+                                                <div class="player nine"></div>
+                                                <div class="player ten"></div>
+                                                <div class="player eleven"></div>
+                                            </div>
+                                            <div class="field right">
+                                                <div class="penalty-area">
+                                                </div>
+                                            </div>
+                                        </section>    
+                                        <div class="text"> 18:53 - 67:38</div>
+                                        </div>
+                                    
+                                        <div class="mySlides fade">
+                                        <div class="numbertext">3 / 3</div>
+                                        <section class="pitch">
+                                            <div class="field left">
+                                                <div class="penalty-area">
+                                                </div>
+                                            </div>
+                                            <div class="center-circle"></div>
+                                            <div class="home-team">
+                                                <div class="player one"></div>
+                                                <div class="player two"></div>
+                                                <div class="player three"></div>
+                                                <div class="player four"></div>
+                                                <div class="player five"></div>
+                                                <div class="player six"></div>
+                                                <div class="player seven"></div>
+                                                <div class="player eight"></div>
+                                                <div class="player nine"></div>
+                                                <div class="player ten"></div>
+                                                <div class="player eleven"></div>
+                                            </div>
+                                            <div class="visitor-team">
+                                                <div class="player one"></div>
+                                                <div class="player two"></div>
+                                                <div class="player three"></div>
+                                                <div class="player four"></div>
+                                                <div class="player five"></div>
+                                                <div class="player six"></div>
+                                                <div class="player seven"></div>
+                                                <div class="player eight"></div>
+                                                <div class="player nine"></div>
+                                                <div class="player ten"></div>
+                                                <div class="player eleven"></div>
+                                            </div>
+                                            <div class="field right">
+                                                <div class="penalty-area">
+                                                </div>
+                                            </div>
+                                        </section> 
+                                        <div class="text">Caption Three</div>
+                                        </div>
+                                    
+                                        <!-- Next and previous buttons -->
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                    </div>
+                                    <br>
+                                    
+                                    <!-- The dots/circles -->
+                                    <div style="text-align:center" id="dots">
+                                        <span class="dot" onclick="currentSlide(1)"></span>
+                                        <span class="dot" onclick="currentSlide(2)"></span>
+                                        <span class="dot" onclick="currentSlide(3)"></span>
+                                    </div>
+                                </td>
+                                <td style="text-align: center; padding-bottom: 150px; padding-top: 50px;">
+                                    <audio src="/media/music.mp3" controls></audio>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center; background-color: rgb(55, 178, 141); padding-left: 40px; padding-right: 40px; border-radius: 15px;">
+                                    <h2> Ατρόμητος Πλαγιαρίου - Αναγγένηση Επανομής</h2>
+                                    <h1> 2 - 2 </h1>
+                                    <h3> Γήπεδο </h3>
+                                </td>
+                            </tr>
+                        </table>
+                        <style>
+                            :root {
+                                --light_blue: rgb(30, 144, 255);
+                                --white: rgb(255, 255, 255);
+                                --smoky_white:rgb(200, 200, 200);
+                                --blue: rgb(40, 87, 159);
+                                --dark_blue: rgb(0, 50, 130);
+                            }
+                            body{
+                                background-color: var(--blue); 
+                                background-size: cover;
+                            }
+                            #title {
+                                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                                background-image: url(/media/grass.jpg);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                font-size: 100px;
+                                text-align: center;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif;
+                                font-weight: 800;
+                                -webkit-font-smoothing: antialiased;
+                                background-position: right top;
+                                margin-top: -1vw;
+                            }
+                            #banner{
+                                width: 100%; 
+                                height: 100%;
+                                padding-right: 0px;
+                                padding-bottom: 0px;
+                                justify-content: flex-start; 
+                                align-items: center;
+                                position: absolute;
+                                margin-top: -18vw;
+                                gap: 0px;
+                                display: inline-flex
+                            }
+                            #nav-bar{
+                                width: 380px; 
+                                height: 40px; 
+                                text-align: center; 
+                                color: var(--white); 
+                                font-size: 32px; 
+                                font-family: Arial; 
+                                font-weight: 600;
+                                overflow: hidden;
+                            }
+                            
+                            a{text-decoration: none;}
+                            a {color: var(--dark_blue)}
+                            a:visited {color: var(--dark_blue);}
+                            a:hover {color: var(--smoky_white);}
+                            a:active {color: var(--white);}
+                            
+                            .dropdown .dropbtn { 
+                                border: none;
+                                outline: none;
+                                color: var(--dark_blue);
+                                margin: 0;
+                                width: 380px; 
+                                height: 40px; 
+                                text-align: center;
+                                font-size: 32px; 
+                                font-family: Arial; 
+                                font-weight: 600;
+                                overflow: hidden;
+                                background-color: var(--blue);
+                            }
+                            .navbar a:hover, .dropdown:hover .dropbtn {
+                                background-color: var(--blue);
+                            }
+                            .dropdown-content {
+                                display: none;
+                                position: absolute;
+                                background-color: rgb(240, 248, 255, .5);
+                                min-width: 160px;
+                                z-index: 1;
+                                margin-left: 60px;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                border-radius: 15px;
+                            }
+                            .dropdown-content a {
+                                float: none;
+                                color: dimgrey;
+                                padding: 12px 16px;
+                                text-decoration: none;
+                                display: block;
+                                text-align: left;
+                            }
+                            
+                            .dropdown-content a:hover {
+                                background-color: var(--light_blue);
+                            }
+                            
+                            .dropdown:hover .dropdown-content {
+                                display: block;
+                            }
+                              
+                            body {font-family: Verdana, sans-serif; margin:0}
+                            .mySlides {display: none}
+                            img {vertical-align: middle;}
+                            
+                            /* Slideshow container */
+                            .slideshow-container {
+                            max-width: 530px;
+                            max-height: 500px;
+                            position: relative;
+                            margin-left: 0;
+                            }
+                            
+                            /* Next & previous buttons */
+                            .prev, .next {
+                            cursor: pointer;
+                            position: absolute;
+                            top: 50%;
+                            width: auto;
+                            padding: 16px;
+                            margin-top: -22px;
+                            color: white;
+                            font-weight: bold;
+                            font-size: 18px;
+                            transition: 0.6s ease;
+                            border-radius: 0 3px 3px 0;
+                            user-select: none;
+                            }
+                            
+                            /* Position the "next button" to the right */
+                            .next {
+                            right: 0;
+                            border-radius: 3px 0 0 3px;
+                            }
+                            
+                            /* On hover, add a black background color with a little bit see-through */
+                            .prev:hover, .next:hover {
+                            background-color: rgba(0,0,0,0.8);
+                            }
+                            
+                            /* Caption text */
+                            .text {
+                            color: #f2f2f2;
+                            font-size: 15px;
+                            padding: 8px 12px;
+                            position: absolute;
+                            bottom: 100px;
+                            width: 100%;
+                            text-align: center;
+                            }
+                            
+                            /* Number text (1/3 etc) */
+                            .numbertext {
+                            color: #f2f2f2;
+                            font-size: 12px;
+                            padding: 8px 12px;
+                            position: absolute;
+                            top: 0;
+                            }
+                            
+                            /* The dots/bullets/indicators */
+                            .dot {
+                            cursor: pointer;
+                            height: 15px;
+                            width: 15px;
+                            margin: 0 2px;
+                            background-color: antiquewhite;
+                            border-radius: 50%;
+                            display: inline-block;
+                            transition: background-color 0.6s ease;
+                            }
+
+                            #dots {
+                                position: absolute;
+                                margin-left: 14.5vw;
+                            }
+                            
+                            .active, .dot:hover {
+                                background-color: bisque;
+                            }
+                            
+                            /* Fading animation */
+                                .fade {
+                                animation-name: fade;
+                                animation-duration: 2s;
+                            }
+                            
+                            @keyframes fade {
+                                from {opacity: .4} 
+                                to {opacity: 1}
+                            }
+                            
+                            /* On smaller screens, decrease text size */
+                            @media only screen and (max-width: 300px) {
+                                .prev, .next,.text {font-size: 11px}
+                            }
+                            
+                            #contact_icon {
+                                padding-bottom: 50px;
+                                padding-top: 50px;
+                            }
+                            
+                            #contact {
+                                padding-bottom: 50px;
+                                padding-top: 50px;
+                            
+                            }
+                            
+                            #contact_table {
+                                position: absolute;
+                                margin-top: 1vw;
+                                margin-left: 6vw;
+                                color: antiquewhite;
+                            }
+                            
+                            #cell {
+                                padding-left: 30px;
+                                padding-bottom: 20px;
+                            }
+                            
+                            #special_cell {
+                                padding-left: 20px;
+                                padding-right: 100px;
+                            }
+                            
+                            #match {
+                                background-color: rgb(54, 142, 209);
+                                border-radius: 15px;
+                                text-align: center;
+                                border:6px rgba(104, 212, 144, 0.7)
+                                solid;border-radius:8px;
+                                color: bisque;
+                            }
+                            
+                            table { 
+                                border-spacing: 30px; 
+                            }
+                            
+                            .pitch{
+                                background-color: #2d9734;
+                                width: 375px;
+                                height: 535px;
+                                position: relative;
+                                margin-left: 5vw;
+                            }
+                            .pitch:after{
+                            content: "";
+                            border-left: 1px solid white;
+                            position: absolute;
+                            top :94px;
+                            left: 186px;
+                            display:block;
+                            height:355px;
+                            -webkit-transform:rotate(90deg);
+                            }
+                            
+                            .pitch:before{
+                            content: "";
+                            border: 1px solid white;
+                            position: absolute;
+                            top: 90px;
+                            left: -72px;
+                            display:block;
+                            width: 515px;
+                            height: 355px;
+                            -webkit-transform:rotate(90deg);
+                            }
+                            
+                            .center-circle{
+                                position: absolute;
+                                top: 246.5px;
+                                left: 155px;
+                                width: 50px;
+                                height: 50px;
+                                border: 1px solid white;
+                                border-radius: 50%;
+                            }
+                            .center-circle:after{
+                                position: absolute;
+                                top: 23px;
+                                left: 23px;
+                                width: 1px;
+                                height: 1px;
+                                background-color:white;
+                                content:"";
+                                border:1px solid white;
+                            }
+                            
+                            .penalty-area{
+                                position: absolute;
+                                height: 140px;
+                                width: 80px;
+                                border: 1px solid white;
+                                -webkit-transform:rotate(90deg);
+                            }
+                            
+                            .left .penalty-area{
+                                left: 140px;
+                                border-left: 0;
+                                top: -20px;
+                            }
+                            
+                            .right .penalty-area{
+                                right: 155px;
+                                border-right: 0;
+                                top: 415px;
+                            }
+                            
+                            .penalty-area:before{
+                                position: absolute;
+                                height: 70px;
+                                width: 35px;
+                                top: 35px;
+                                border: 1px solid white;
+                                content:"";
+                            }
+                            .left .penalty-area:before{
+                                left:0px;
+                            border-left:0;
+                            }
+                            .right .penalty-area:before{
+                                right:0px;
+                            border-right:0;
+                            }
+                            
+                            .penalty-area:after{
+                                position: absolute;
+                                height: 2px;
+                                width: 2px;
+                                top: 70px;
+                                background-color:white;
+                                content:"";
+                            }
+                            .left .penalty-area:after{
+                                right:15px;
+                            }
+                            .right .penalty-area:after{
+                                left:15px;
+                            }
+                            
+                            .player{
+                                position:absolute;
+                                border-radius:50%;
+                                width:20px;
+                                height:20px;
+                            }
+                            .player:after{
+                            font-size:10px;
+                            position:absolute;
+                            left:3px;
+                            }
+                            .home-team .player{
+                            background:rgb(24, 71, 189);
+                            }
+                            .home-team .player.one{
+                            top:495px;
+                            left: 168px;
+                            background:rgb(46, 171, 216);
+                            }
+                            .home-team .player.one:after{
+                            content:"1";
+                            }
+                            .home-team .player.two{
+                            top: 400px;
+                            left: 50px;
+                            }
+                            .home-team .player.two:after{
+                            content:"2";
+                            }
+                            .home-team .player.three{
+                                top: 400px;
+                                left:130px;
+                            }
+                            .home-team .player.three:after{
+                                content:"3";
+                            }
+                            .home-team .player.four{
+                            top: 400px;
+                            left: 220px;
+                            }
+                            .home-team .player.four:after{
+                                content:"4";
+                            }
+                            .home-team .player.five{
+                                top: 400px;
+                                left: 300px;
+                            }
+                            .home-team .player.five:after{
+                                content:"5";
+                            }
+                            .home-team .player.six{
+                                top:230px;
+                                left:50px;
+                            }
+                            .home-team .player.six:after{
+                            content:"6";
+                            }
+                            .home-team .player.seven{
+                            top:230px;
+                            left:130px;
+                            }
+                            .home-team .player.seven:after{
+                            content:"7";
+                            }
+                            .home-team .player.eight{
+                            top:230px;
+                            left:220px;
+                            }
+                            .home-team .player.eight:after{
+                            content:"8";
+                            }
+                            .home-team .player.nine{
+                            top:230px;
+                            left:300px;
+                            }
+                            .home-team .player.nine:after{
+                            content:"9";
+                            }
+                            .home-team .player.ten{
+                            top:100px;
+                            left:260px;
+                            }
+                            .home-team .player.ten:after{
+                            content:"10";
+                            }
+                            .home-team .player.eleven{
+                            top:100px;
+                            left: 75px;
+                            }
+                            .home-team .player.eleven:after{
+                            content:"11";
+                            }
+                            
+                            .player{
+                            animation-duration:5s;
+                            animation-timing-function:linear;
+                            animation-delay:2s;
+                            animation-iteration-count:infinite;
+                            animation-direction:alternate;
+                            animation-play-state:running;
+                            }
+                            .home-team .player.nine{
+                            animation-name:nine;
+                            }
+                            
+                            .home-team .player.eight{
+                            animation-name:eight;
+                            }
+
+                            #matches_info_table {
+                                border-spacing: 5px;
+                                position: absolute;
+                                margin-top: 16vw;
+                            }
+
+                            #item_table {
+                                align-items: center;
+                            }
+                        </style>
+                    </body>
+                </html>
                 `,
                 '2': `
                     <h1>Welcome to Page 2</h1>
@@ -62,7 +692,7 @@
         });
     </script>
 </head>
-    <body>
-        <div id="dynamic-content"></div>
-    </body>
+<body>
+    <div id="dynamic-content"></div>
+</body>
 </html>
